@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="300px"
+  android:background="@drawable/sms_bg"
+  >
+<TextView
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="@string/addressee"
+  android:layout_marginTop="0px"
+  android:textSize="16dip"
+  android:textColor="@color/black"
+  android:layout_centerHorizontal="true"
+/>
+<EditText
+  android:layout_width="200px"
+  android:layout_height="40px"
+  android:layout_centerHorizontal="true"
+  android:layout_marginTop="25px"
+  android:id="@+id/number"
+/>
+<EditText
+  android:layout_width="200px"
+  android:layout_height="150px"
+  android:layout_centerHorizontal="true"
+  android:layout_below="@id/number"
+  android:id="@+id/message"
+/>
+<ListView
+  android:layout_width="150dip" 
+  android:layout_height="wrap_content" 
+  android:layout_below="@id/number"
+  android:id="@+id/number_list" 
+  android:background="@drawable/bottom_bg"
+  android:visibility="gone"
+  android:layout_centerHorizontal="true"
+/>
+<Button
+    android:layout_below="@id/message"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:id="@+id/send_but" 
+    android:background="@drawable/send"
+    android:layout_marginTop="10px"
+    android:layout_marginLeft="50px"
+	
+ />
+ 
+ <Button
+    android:layout_alignParentRight="true"
+    android:layout_below="@id/message"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:id="@+id/cancel_but" 
+    android:background="@drawable/cancel"
+    android:layout_marginTop="10px"
+    android:layout_marginRight="50px"
+ />
+</RelativeLayout>

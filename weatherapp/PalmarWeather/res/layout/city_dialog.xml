@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="200dip"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bg"
+    >
+<EditText
+	android:id="@+id/city_name"
+	android:layout_width="150dip"
+	android:layout_height="40dip"
+	android:textSize="16sp"
+	android:maxLength="12"
+	android:layout_marginTop="15px"
+	android:layout_centerHorizontal="true"
+/>
+<CheckBox
+    android:layout_below="@id/city_name"
+    android:id="@+id/set_checkbox"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:hint="@string/set_defulat_city"
+	android:textColorHint="@color/blue"
+	android:layout_alignLeft="@id/city_name"
+/>
+<Button
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:id="@+id/opt_full" 
+    android:background="@drawable/confirm"
+    android:layout_below="@id/set_checkbox"
+    android:layout_marginLeft="50px"
+    android:layout_marginTop="15px"
+ />
+ 
+ <Button
+    android:layout_marginTop="15px"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:id="@+id/cancel_but" 
+    android:background="@drawable/cancel"
+    android:layout_marginRight="50px"
+    android:layout_below="@id/set_checkbox"
+    android:layout_alignParentRight="true"
+ />
+ <LinearLayout 
+android:layout_marginTop="20px"
+android:layout_marginLeft="30px"
+android:layout_width="20px"
+android:layout_height="20px"
+android:id="@+id/error_img" />
+</RelativeLayout>
